@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Workshop</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+      *{
+        margin:0;
+        padding:0;
+      }
+    body{
+        background-color:black;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .heading{
+      margin-top:20px;
+      margin-bottom:50px;
+      text-align: center;
+      color:green;
+      font-size: 50px;
+      text-decoration:underline;
+      font-weight:bold;
+      font-family: 'Tektur', cursive;
+      animation:color-change 1.5s infinite;
+    }
+    @keyframes color-change{
+      0%{color:green}
+      25%{color:aquamarine}
+      50%{color:lightblue}
+      100%{color:aqua}
+    }
+    .container{
+      height:300px;
+      width:900px;
+      background-color:yellow;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .btn{
+      width:150px;
+      height:120px;
+      background-color:blueviolet;
+      font-size:35px;
+      border-radius: 30px;
+      border:5px solid black;
+      box-shadow: 0 15px 15px green;
+    }
+    .btn:hover{
+      background-color:black;
+      border-radius:80px;
+      transition:0.5s;
+    }
+    a:link{
+      font-weight:bold;
+      text-decoration:none;
+    }
+    a:hover{
+      text-decoration:underline;
+      transition:0.5s;
+    }
+    .credits{
+      color:green;
+      font-weight:bold;
+      margin-left:320px;
+      margin-top:70px;
+      font-size:25px;
+      font-family: 'Edu SA Beginner', cursive;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>VEHICLE WORKSHOP</h1>
+    </div>
+    <div class="container">
+      <button type="button" class="btn btn-outline-primary">
+        <a href="/Hundai" style="color: white">Hyundai</a>
+      </button>
+      <button type="button" class="btn btn-outline-secondary"><a href="/Tata" style="color:white">Tata</a></button>
+      <button type="button" class="btn btn-outline-success"><a href="/Fiat" style="color:white">Fiat</a></button>
+      <button type="button" class="btn btn-outline-danger">
+        <a href="/MarutiSuzuki" style="color:white">Maruti Suzuki</a>
+      </button>
+      <button type="button" class="btn btn-outline-warning"><a href="/Ford" style="color:white">Ford</a></button>
+    </div>
+    <div class="credits">Created by Pranjal Singh, Prajjwal Singh and Mohd Naim Hussain</div>
+  </body>
+</html>
